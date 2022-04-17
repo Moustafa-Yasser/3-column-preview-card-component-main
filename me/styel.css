@@ -1,0 +1,124 @@
+        /* Start default value */
+        
+         :root {
+            --Bright-orange: hsl(31, 77%, 52%);
+            --Dark-cyan: hsl(184, 100%, 22%);
+            --Very-dark-cyan: hsl(179, 100%, 13%);
+            --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+            --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+        }
+        
+        body {
+            Font-size: 15px;
+            background-color: var(--Very-light-gray-background-headings-buttons);
+            color: var(--Transparent-white-paragraphs);
+            font-family: 'Lexend Deca', sans-serif;
+        }
+        /* End default value */
+        /* Start media  */
+        
+        @media (max-width: 2000px) {
+            .up {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                border-radius: 10px;
+                background-image: linear-gradient(to right, hsl(31, 77%, 52%) 33.333333%, hsl(184, 100%, 22%) 33.333333% 66.66666667%, hsl(179, 100%, 13%) 66.66666667% 100%);
+            }
+            .up div {
+                height: 420px;
+            }
+        }
+        
+        @media (min-width: 375px) and (max-width: 1000px) {
+            .up {
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                grid-template-rows: repeat(3, auto);
+                border-radius: 10px;
+                background-image: linear-gradient(to bottom, hsl(31, 77%, 52%) 33.333333%, hsl(184, 100%, 22%) 33.333333% 66.66666667%, hsl(179, 100%, 13%) 66.66666667% 100%);
+            }
+            .up div {
+                height: 330px;
+            }
+        }
+        /* End media  */
+        /* Start Up */
+        
+        .upup {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* End Up */
+        /* Start Divs */
+        
+        .up div {
+            line-height: 30px;
+            width: 225px;
+            padding: 50px;
+            position: relative;
+        }
+        
+        h1 {
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+        
+        button {
+            width: 150px;
+            height: 50px;
+            outline: none;
+            border: none;
+            border-radius: 35px;
+            position: absolute;
+            bottom: 40px;
+            font-weight: 700;
+            transition-duration: 0.3s;
+        }
+        
+        button:hover {
+            background-color: transparent;
+            border: 2px solid var(--Transparent-white-paragraphs);
+            color: var(--Transparent-white-paragraphs) !important;
+            font-weight: 400;
+        }
+        
+        div.sednas button {
+            color: var(--Bright-orange);
+        }
+        
+        div.suvs button {
+            color: var(--Dark-cyan);
+        }
+        
+        div.luxury button {
+            color: var(--Very-dark-cyan);
+        }
+        /* End Divs */
+        
+        .attribution {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            background-color: var(--Very-dark-cyan);
+            height: 50px;
+            position: fixed;
+            bottom: 0;
+            color: white;
+            font-size: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        
+        a:hover {
+            color: var(--Dark-cyan);
+        }
